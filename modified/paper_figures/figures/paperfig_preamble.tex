@@ -1,0 +1,59 @@
+% paperfig_preamble.tex
+% Shared, adjustable styling knobs for the .tikz figures in this folder (exported by
+% paper_export via matlab2tikz and post processed by tikz_make_adjustable.m).
+% \input this in the document preamble, AFTER \usepackage{pgfplots}:
+%
+%   \usepackage{pgfplots}\pgfplotsset{compat=newest}
+%   \input{paperfig_preamble.tex}
+%
+% To restyle, redefine any knob below in your preamble (after the \input), or right
+% before a single \input{...tikz} to restyle just that figure. Every figure picks the
+% change up at compile time; nothing has to be regenerated in MATLAB.
+
+% ======== size: one multiplier on every baked axis dimension (width, height, and the
+% multi panel offsets), so the whole figure grows or shrinks while the data stays put.
+% The figures are exported at their final paper size, so this is 1 in the paper.
+\providecommand{\figscale}{1}
+
+% ======== fonts. \figfont is the base for the whole picture; the rest break out the
+% individual elements and default to \figfont, so you can size, say, the legend text
+% independently of the tick labels.
+\providecommand{\figfont}{\footnotesize}      % base font for the whole figure
+\providecommand{\figticfont}{\figfont}        % tick labels
+\providecommand{\figlabelfont}{\figfont}      % axis labels (the x and y labels)
+\providecommand{\figtitlefont}{\figfont}      % axis titles (the WECC / SC500 headers)
+\providecommand{\figlegendfont}{\figfont}     % legend text
+\providecommand{\figcornerfont}{\figfont\bfseries}  % bold corner tags
+
+% ======== title gap: pull axis titles (the WECC / SC500 / Texas2000 column headers)
+% down toward the plots. matlab2tikz anchors the title just above the axis with a
+% default gap that looks too large once the figure is small; a small negative yshift
+% closes it. Override per figure before an \input if a figure needs a different gap.
+\providecommand{\figtitleshift}{-4pt}
+
+% ======== zoom inset tick shift (Fig. 7). Its three insets sit on top of the settled
+% COI trace of the panel behind them, and unshifted x tick numbers were cut by it.
+% 1.5pt clears the trace by about 1pt; it is near the ceiling, since only about 3.1pt
+% separate the digit tops from the inset's bottom border.
+\providecommand{\figinsettickshift}{1.5pt}
+
+% ======== legend box (applies to the real pgfplots legends and the hand drawn per
+% node legend alike).
+\providecommand{\figlegendlw}{0.6pt}          % legend box stroke width
+\providecommand{\figlegenddraw}{black}        % legend box stroke colour
+\providecommand{\figlegendfill}{white}        % legend box fill colour
+
+% ======== notation used inside the axis labels. The paper defines these itself; the
+% \providecommand makes the figures \input-able in a bare document as well.
+\providecommand{\coi}{\mathrm{COI}}
+\providecommand{\fcoi}{f_{\coi}}
+\providecommand{\wcoi}{\omega_{\coi}}
+
+\pgfplotsset{
+  % plain fixed-decimal tick labels (0.05), never sci form (5e-2) or a 10^-2 common factor
+  scaled ticks=false,
+  every tick label/.append style={/pgf/number format/.cd, fixed, precision=4, /tikz/.cd},
+  every axis label/.append style={font=\figlabelfont},
+  every axis title/.append style={font=\figtitlefont, yshift=\figtitleshift},
+  every axis legend/.append style={font=\figlegendfont, inner xsep=2pt, inner ysep=1pt, nodes={inner sep=1pt}},
+}

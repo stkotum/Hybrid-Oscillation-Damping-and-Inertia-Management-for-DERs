@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Binary artifacts: never normalise line endings or diff as text
+*.mat binary
+*.slx binary
+*.pdf binary
+*.png binary

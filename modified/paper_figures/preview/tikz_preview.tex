@@ -1,0 +1,71 @@
+% tikz_preview.tex - render the five paper figures from ../figures/ inside a minimal
+% IEEE-class two-column document, at the size and font they have in the paper, to check
+% that each one fits its column and comes out at the height it is supposed to.
+%
+%   compile:  lualatex --interaction=nonstopmode tikz_preview.tex
+%
+% lualatex, not pdflatex: the sweep figures run to ~100k lines with 9 to 12 axes and
+% exceed pdflatex's main_memory.
+%
+% The .tikz are post processed (tikz_make_adjustable.m) so fonts, the legend box and
+% the size follow the knobs in paperfig_preamble.tex. Nothing is overridden here: the
+% figures render at the preamble defaults, which is what the paper uses, so this
+% preview is a faithful check rather than a differently-tuned one.
+\documentclass[journal]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+% The paper sets maths to 80 % of the body size for its page budget. Keep it, or every
+% axis label and tick comes out larger here than it does in the paper.
+\DeclareMathSizes{10}{8}{6}{5}
+
+\newcommand{\figdir}{../figures}
+% The sweep figures embed their colour-bar rasters by bare filename.
+\graphicspath{{\figdir/}}
+% adjustable font / legend / size knobs (\figscale, \figfont, \figlegendlw, ...) and
+% the \fcoi notation the axis labels use:
+\input{\figdir/paperfig_preamble.tex}
+
+\begin{document}
+\title{Paper figures --- PGF/TikZ render check}
+\author{auto-generated preview of \texttt{make\_paper\_figures} output}
+\maketitle
+
+\begin{abstract}
+Each figure is the \texttt{.tikz} written by \texttt{paper\_export}, placed at its
+paper size and font. Figures 4, 5(a) and 5(b) are single-column; Figure 7 spans the
+full text width, as it does in the paper.
+\end{abstract}
+
+\section{Twelve-bus example ($K = 20\,I$)}
+
+\begin{figure}[!t]\centering
+  \input{\figdir/fig4_linear_eig.tikz}
+  \caption{Fig.~4 --- small-signal spectrum, $K=0$ against $K=20\,I$.}
+\end{figure}
+
+\begin{figure}[!t]\centering
+  \input{\figdir/fig5a_linear_perdev_off_vs_on.tikz}
+  \caption{Fig.~5(a) --- per-node deviation, linearised model, $K=0$ $|$ $K=20\,I$.}
+\end{figure}
+
+\begin{figure}[!t]\centering
+  \input{\figdir/fig5b_nonlinear_perdev_off_vs_on.tikz}
+  \caption{Fig.~5(b) --- per-node deviation, nonlinear simulation, $K=0$ $|$ $K=20\,I$.}
+\end{figure}
+
+\section{Large-system activation sweep (WECC, SC500, Texas2000)}
+
+\begin{figure}[!t]\centering
+  \input{\figdir/fig6_eig_zoom_3cases.tikz}
+  \caption{Fig.~6 --- small-signal spectrum over the activation sweep.}
+\end{figure}
+
+% Fig. 7 is the one DOUBLE-COLUMN figure: the 3x3 grid spans the full text width
+% (figure*, not figure), exactly as in the paper.
+\begin{figure*}[!t]\centering
+  \input{\figdir/fig7_coi_envelope_3cases.tikz}
+  \caption{Fig.~7 --- COI envelope over the activation sweep (full text width).}
+\end{figure*}
+
+\end{document}

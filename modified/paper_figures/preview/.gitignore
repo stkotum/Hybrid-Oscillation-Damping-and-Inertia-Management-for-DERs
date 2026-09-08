@@ -1,0 +1,7 @@
+# LaTeX build artifacts - keep only the source .tex and the rendered .pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz

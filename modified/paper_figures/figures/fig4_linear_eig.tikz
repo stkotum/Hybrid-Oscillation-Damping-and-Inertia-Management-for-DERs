@@ -1,0 +1,413 @@
+% This file was created by matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.70000,0.70000,0.75000}%
+\definecolor{mycolor2}{rgb}{0.57647,0.00000,0.00000}%
+\definecolor{mycolor3}{rgb}{0.00000,0.32157,0.57647}%
+%
+\begin{tikzpicture}[font=\figfont]
+
+\begin{axis}[%
+width={\figscale*1.171in},
+height={\figscale*0.788in},
+at={(\figscale*0.455in,\figscale*0.31in)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\figticfont},
+every x tick/.append style={black},
+xmin=-150,
+xmax=-6,
+xtick={-150,   -6},
+xlabel={$\mathrm{Re}(\lambda)$ in rad/s},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\figticfont},
+every y tick/.append style={black},
+ymin=-40,
+ymax=40,
+ytick={-40,   0,  40},
+ylabel={$\mathrm{Im}(\lambda)$ in rad/s},
+axis background/.style={fill=white}
+]
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-140	-40\\
+-140	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-130	-40\\
+-130	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-120	-40\\
+-120	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-110	-40\\
+-110	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-100	-40\\
+-100	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-90	-40\\
+-90	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-80	-40\\
+-80	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-70	-40\\
+-70	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-60	-40\\
+-60	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-50	-40\\
+-50	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-40	-40\\
+-40	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-30	-40\\
+-30	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-20	-40\\
+-20	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-10	-40\\
+-10	40\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-150	-20\\
+-6	-20\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-150	0\\
+-6	0\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-150	20\\
+-6	20\\
+};
+\addplot [color=mycolor1, dashed, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-150	840\\
+-146.939	840\\
+-143.878	840\\
+-140.816	840\\
+-137.755	840\\
+-134.694	840\\
+-131.633	840\\
+-128.571	840\\
+-125.51	840\\
+-122.449	840\\
+-119.388	840\\
+-116.327	840\\
+-113.265	840\\
+-110.204	840\\
+-107.143	840\\
+-104.082	840\\
+-101.02	840\\
+-97.9592	840\\
+-94.898	840\\
+-91.8367	840\\
+-88.7755	840\\
+-85.7143	840\\
+-82.6531	822.388\\
+-79.5918	791.929\\
+-76.5306	761.47\\
+-73.4694	731.011\\
+-70.4082	700.552\\
+-67.3469	670.094\\
+-64.2857	639.635\\
+-61.2245	609.176\\
+-58.1633	578.717\\
+-55.102	548.258\\
+-52.0408	517.8\\
+-48.9796	487.341\\
+-45.9184	456.882\\
+-42.8571	426.423\\
+-39.7959	395.964\\
+-36.7347	365.506\\
+-33.6735	335.047\\
+-30.6122	304.588\\
+-27.551	274.129\\
+-24.4898	243.67\\
+-21.4286	213.212\\
+-18.3673	182.753\\
+-15.3061	152.294\\
+-12.2449	121.835\\
+-9.18367	91.3764\\
+-6.12245	60.9176\\
+};
+\addplot [color=mycolor1, dashed, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-150	-840\\
+-146.939	-840\\
+-143.878	-840\\
+-140.816	-840\\
+-137.755	-840\\
+-134.694	-840\\
+-131.633	-840\\
+-128.571	-840\\
+-125.51	-840\\
+-122.449	-840\\
+-119.388	-840\\
+-116.327	-840\\
+-113.265	-840\\
+-110.204	-840\\
+-107.143	-840\\
+-104.082	-840\\
+-101.02	-840\\
+-97.9592	-840\\
+-94.898	-840\\
+-91.8367	-840\\
+-88.7755	-840\\
+-85.7143	-840\\
+-82.6531	-822.388\\
+-79.5918	-791.929\\
+-76.5306	-761.47\\
+-73.4694	-731.011\\
+-70.4082	-700.552\\
+-67.3469	-670.094\\
+-64.2857	-639.635\\
+-61.2245	-609.176\\
+-58.1633	-578.717\\
+-55.102	-548.258\\
+-52.0408	-517.8\\
+-48.9796	-487.341\\
+-45.9184	-456.882\\
+-42.8571	-426.423\\
+-39.7959	-395.964\\
+-36.7347	-365.506\\
+-33.6735	-335.047\\
+-30.6122	-304.588\\
+-27.551	-274.129\\
+-24.4898	-243.67\\
+-21.4286	-213.212\\
+-18.3673	-182.753\\
+-15.3061	-152.294\\
+-12.2449	-121.835\\
+-9.18367	-91.3764\\
+-6.12245	-60.9176\\
+};
+\addplot [color=mycolor2, line width=0.9pt, only marks, mark size=2.3pt, mark=x, mark options={solid, mycolor2}, forget plot]
+  table[row sep=crcr]{%
+-138.896	0\\
+-111.113	0\\
+-44.789	0\\
+-9.18391	0\\
+};
+\addplot [color=mycolor3, line width=0.4pt, only marks, mark size=1.4pt, mark=*, mark options={solid, fill=mycolor3, mycolor3}, forget plot]
+  table[row sep=crcr]{%
+-78.5657	0\\
+-64.8779	0\\
+-6.72803	31.0734\\
+-6.72803	-31.0734\\
+-9.3304	16.538\\
+-9.3304	-16.538\\
+-20.2816	0\\
+-6.15461	7.66302\\
+-6.15461	-7.66302\\
+-10.1832	0\\
+};
+\end{axis}
+
+\begin{axis}[%
+width={\figscale*1.171in},
+height={\figscale*0.788in},
+at={(\figscale*1.93in,\figscale*0.31in)},
+scale only axis,
+separate axis lines,
+every outer x axis line/.append style={black},
+every x tick label/.append style={font=\figticfont},
+every x tick/.append style={black},
+xmin=-6,
+xmax=1,
+xtick={-5,  0},
+xlabel={$\mathrm{Re}(\lambda)$ in rad/s},
+every outer y axis line/.append style={black},
+every y tick label/.append style={font=\figticfont},
+every y tick/.append style={black},
+ymin=-40,
+ymax=40,
+ytick={-40,   0,  40},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=\figlegenddraw, fill=\figlegendfill, line width=\figlegendlw}
+]
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-6	-20\\
+1	-20\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-6	0\\
+1	0\\
+};
+\addplot [color=white!85!black, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-6	20\\
+1	20\\
+};
+\addplot [color=mycolor1, dashed, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-6	59.6992\\
+-5.87755	58.4809\\
+-5.7551	57.2625\\
+-5.63265	56.0442\\
+-5.5102	54.8258\\
+-5.38776	53.6075\\
+-5.26531	52.3891\\
+-5.14286	51.1708\\
+-5.02041	49.9524\\
+-4.89796	48.7341\\
+-4.77551	47.5157\\
+-4.65306	46.2974\\
+-4.53061	45.079\\
+-4.40816	43.8607\\
+-4.28571	42.6423\\
+-4.16327	41.424\\
+-4.04082	40.2056\\
+-3.91837	38.9873\\
+-3.79592	37.7689\\
+-3.67347	36.5506\\
+-3.55102	35.3322\\
+-3.42857	34.1139\\
+-3.30612	32.8955\\
+-3.18367	31.6772\\
+-3.06122	30.4588\\
+-2.93878	29.2404\\
+-2.81633	28.0221\\
+-2.69388	26.8037\\
+-2.57143	25.5854\\
+-2.44898	24.367\\
+-2.32653	23.1487\\
+-2.20408	21.9303\\
+-2.08163	20.712\\
+-1.95918	19.4936\\
+-1.83673	18.2753\\
+-1.71429	17.0569\\
+-1.59184	15.8386\\
+-1.46939	14.6202\\
+-1.34694	13.4019\\
+-1.22449	12.1835\\
+-1.10204	10.9652\\
+-0.979592	9.74682\\
+-0.857143	8.52846\\
+-0.734694	7.31011\\
+-0.612245	6.09176\\
+-0.489796	4.87341\\
+-0.367347	3.65506\\
+-0.244898	2.4367\\
+-0.122449	1.21835\\
+0	-0\\
+};
+\addplot [color=mycolor1, dashed, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-6	-59.6992\\
+-5.87755	-58.4809\\
+-5.7551	-57.2625\\
+-5.63265	-56.0442\\
+-5.5102	-54.8258\\
+-5.38776	-53.6075\\
+-5.26531	-52.3891\\
+-5.14286	-51.1708\\
+-5.02041	-49.9524\\
+-4.89796	-48.7341\\
+-4.77551	-47.5157\\
+-4.65306	-46.2974\\
+-4.53061	-45.079\\
+-4.40816	-43.8607\\
+-4.28571	-42.6423\\
+-4.16327	-41.424\\
+-4.04082	-40.2056\\
+-3.91837	-38.9873\\
+-3.79592	-37.7689\\
+-3.67347	-36.5506\\
+-3.55102	-35.3322\\
+-3.42857	-34.1139\\
+-3.30612	-32.8955\\
+-3.18367	-31.6772\\
+-3.06122	-30.4588\\
+-2.93878	-29.2404\\
+-2.81633	-28.0221\\
+-2.69388	-26.8037\\
+-2.57143	-25.5854\\
+-2.44898	-24.367\\
+-2.32653	-23.1487\\
+-2.20408	-21.9303\\
+-2.08163	-20.712\\
+-1.95918	-19.4936\\
+-1.83673	-18.2753\\
+-1.71429	-17.0569\\
+-1.59184	-15.8386\\
+-1.46939	-14.6202\\
+-1.34694	-13.4019\\
+-1.22449	-12.1835\\
+-1.10204	-10.9652\\
+-0.979592	-9.74682\\
+-0.857143	-8.52846\\
+-0.734694	-7.31011\\
+-0.612245	-6.09176\\
+-0.489796	-4.87341\\
+-0.367347	-3.65506\\
+-0.244898	-2.4367\\
+-0.122449	-1.21835\\
+0	0\\
+};
+\addplot [color=mycolor1, dashed, line width=0.6pt, forget plot]
+  table[row sep=crcr]{%
+-3	-40\\
+-3	40\\
+};
+\addplot [color=mycolor2, line width=0.9pt, only marks, mark size=2.3pt, mark=x, mark options={solid, mycolor2}]
+  table[row sep=crcr]{%
+-3.58618	31.5142\\
+-3.58618	-31.5142\\
+-3.00045	29.5084\\
+-3.00045	-29.5084\\
+-3.2766	18.506\\
+-3.2766	-18.506\\
+-5.09251	16.1516\\
+-5.09251	-16.1516\\
+-4.62745	8.55739\\
+-4.62745	-8.55739\\
+};
+\addlegendentry{$K = 0$}
+
+\addplot [color=mycolor3, line width=0.4pt, only marks, mark size=1.4pt, mark=*, mark options={solid, fill=mycolor3, mycolor3}]
+  table[row sep=crcr]{%
+-4.86459	29.2594\\
+-4.86459	-29.2594\\
+-5.07133	17.8782\\
+-5.07133	-17.8782\\
+};
+\addlegendentry{$K = 20\,I$}
+
+\end{axis}
+\end{tikzpicture}%
